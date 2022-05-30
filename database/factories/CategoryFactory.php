@@ -16,7 +16,7 @@ class CategoryFactory extends Factory
     {
 
         $name=$this->faker->unique()->word(20);
-
+        //hola mundo como estas -> hola-mundo-como-estas
         return [
             'name'=>$name,
             'slug'=>Str::slug($name)
